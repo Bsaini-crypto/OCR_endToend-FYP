@@ -1,0 +1,21 @@
+services:
+  ocr-api:
+    build: .
+    container_name: ocr-api
+    ports:
+      - "5002:5002"
+    env_file:
+      - .env
+    environment:
+      - STORAGE_DIR=/app/records
+    volumes:
+      # Mount records directory to persist data
+      - ./records:/app/records
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5002/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+

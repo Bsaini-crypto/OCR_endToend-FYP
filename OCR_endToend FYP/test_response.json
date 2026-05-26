@@ -1,0 +1,53 @@
+{
+  "data": {
+    "Invoice": {
+      "Bill_To": {
+        "Address": "123 Main Street",
+        "City_State_ZIP": "New York, NY 10001",
+        "Company": "Acme Corporation",
+        "Customer_Name": "John Doe",
+        "Email": "john.doe@acme.com"
+      },
+      "Date": "January 15, 2024",
+      "Due_Date": "February 15, 2024",
+      "Invoice_Number": "INV-2024-001234",
+      "Items": [
+        {
+          "Price": "$500.00",
+          "Product": "Product A - Premium Package",
+          "Quantity": "2 units"
+        },
+        {
+          "Price": "$734.56",
+          "Product": "Product B - Standard Package",
+          "Quantity": "1 unit"
+        },
+        {
+          "Duration": "5 hours",
+          "Price": "$250.00",
+          "Service": "Service Fee - Consultation"
+        }
+      ],
+      "Notes": "Thank you for your business! This is a sample invoice for testing OCR API.",
+      "Payment_Method": "Bank Transfer",
+      "Payment_Terms": "Net 30",
+      "Shipping": "$50.00",
+      "Subtotal": "$1,484.56",
+      "Tax": "8.5%",
+      "Tax_Amount": "$126.19",
+      "Total": "$1,660.75"
+    }
+  },
+  "status": "success",
+  "storage": {
+    "airtable": {
+      "error": null,
+      "inserted": true,
+      "record_id": "recGR8ErXBBbKLyY7"
+    },
+    "local": {
+      "file_path": "/app/records/record_20251123_105601_872376.docx",
+      "saved": true
+    }
+  }
+}
